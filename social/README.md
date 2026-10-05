@@ -8,7 +8,7 @@ Material para vestir las páginas de ORI en Facebook, Instagram y WhatsApp Busin
 | --- | --- | --- |
 | `perfil/` | Foto de perfil 1080 × 1080 para Facebook, Instagram y WhatsApp Business | `ori-perfil-rosa-1080` (principal), `ori-perfil-oscuro-1080`, `ori-perfil-gris-1080` |
 | `facebook/` | Portada de Facebook | `ori-fb-portada-gris-1702x630` (principal), `ori-fb-portada-oscuro-1702x630`; cada una también a 851 × 315 |
-| `instagram/destacadas/` | 12 portadas de historias destacadas, 1080 × 1920 | `ori-ig-destacada-01-hogar-1080x1920` a `12-confianza` |
+| `instagram/destacadas/` | 8 portadas de historias destacadas, 1080 × 1920 | `ori-ig-destacada-01-hogar-1080x1920` a `08-clientes` |
 | `src/` | Script y fuentes para regenerar todo | `build.py`, `assets/` |
 
 Cada pieza existe en `.png` (para subir) y `.svg` (editable; el texto va en curvas, no necesita la tipografía).
@@ -32,26 +32,22 @@ Las medidas salen de guías de terceros, no de documentación oficial de Meta. C
 | Portada Facebook | 1702 × 630 (doble densidad) y 851 × 315 | Se ve 820 × 312 en escritorio y 640 × 360 en móvil |
 | Destacada Instagram | 1080 × 1920 | Zona segura: 40 % central |
 
-## Destacadas: nombres propuestos
+## Destacadas
 
-El listado de servicios de ORI es abierto (todo lo que un hogar pueda necesitar), así que el manual no asigna iconos a servicios. Los nombres de abajo son una propuesta inicial; el nombre de la destacada se escribe en Instagram, no en la imagen. Para cambiar un icono, edita `DEST` en `src/build.py` y vuelve a generar.
+Aprobadas por Pepe el 2026-10-05T23:08Z. Siguen el eje del manual (cuidado, mantenimiento y renovación del hogar) más el recorrido del cliente. No afirman servicios que ORI no haya confirmado; el listado de servicios es abierto. El nombre de la destacada se escribe en Instagram, no en la imagen. Para cambiar un icono o agregar una destacada, edita `DEST` en `src/build.py` y vuelve a generar.
 
-| # | Nombre propuesto | Icono |
-| --- | --- | --- |
-| 01 | Hogar | casa con sonrisa |
-| 02 | Renovación | rodillo de pintura |
-| 03 | Jardín | árbol |
-| 04 | Cocina | gorro de chef |
-| 05 | Cuidado | mano con corazón |
-| 06 | Salud | persona con gorro de enfermería |
-| 07 | Belleza | labial |
-| 08 | Auto | auto de frente |
-| 09 | Soporte | auricular con micrófono |
-| 10 | Agenda | calendario con estrella |
-| 11 | Equipo | persona con gorra y overol |
-| 12 | Confianza | apretón de manos |
+| # | Nombre | Icono | Contenido previsto |
+| --- | --- | --- | --- |
+| 01 | Hogar | casa con sonrisa | Quiénes somos |
+| 02 | Cuidado | mano con corazón | Cuidado del hogar |
+| 03 | Mantenimiento | persona con gorra y overol | Mantenimiento |
+| 04 | Renovaciones | rodillo de pintura | Renovaciones |
+| 05 | Agenda | calendario con estrella | Cómo solicitar un servicio |
+| 06 | Contacto | auricular con micrófono | Atención al cliente |
+| 07 | Confianza | apretón de manos | Garantías y proceso |
+| 08 | Clientes | corazón | Testimonios |
 
-Los iconos sin destacada asignada (libro con gorro de chef, secador, tijeras, corazón) siguen disponibles en la biblioteca del sistema.
+Los demás iconos (enfermera, labial, auto, secador, gorro de chef, libro con gorro, tijeras, árbol) siguen en la biblioteca y se asignan solo con confirmación de ORI.
 
 ## Regenerar
 

@@ -98,19 +98,15 @@ cover('oscuro', LOGO_DARK, WHITE, WHITE)
 # 3) Portadas de destacadas de Instagram, 1080x1920. Icono de la biblioteca en dark-ori,
 #    ~30 % del ancho, dentro del 40 % central.
 ICON_DIR = os.path.join(A, 'iconos')
-DEST = [  # (archivo-slug, nombre propuesto de la destacada, icono)
+DEST = [  # (archivo-slug, nombre de la destacada, icono). Aprobado por Pepe 2026-10-05.
     ('hogar', 'Hogar', 'icono-01-casa-sonrisa'),
-    ('renovacion', 'Renovación', 'icono-11-rodillo'),
-    ('jardin', 'Jardín', 'icono-05-arbol'),
-    ('cocina', 'Cocina', 'icono-04-gorro-chef'),
     ('cuidado', 'Cuidado', 'icono-03-mano-corazon'),
-    ('salud', 'Salud', 'icono-09-enfermera'),
-    ('belleza', 'Belleza', 'icono-12-labial'),
-    ('auto', 'Auto', 'icono-10-auto'),
-    ('soporte', 'Soporte', 'icono-07-auricular'),
+    ('mantenimiento', 'Mantenimiento', 'icono-13-operario'),
+    ('renovaciones', 'Renovaciones', 'icono-11-rodillo'),
     ('agenda', 'Agenda', 'icono-08-calendario-estrella'),
-    ('equipo', 'Equipo', 'icono-13-operario'),
+    ('contacto', 'Contacto', 'icono-07-auricular'),
     ('confianza', 'Confianza', 'icono-15-apreton-manos'),
+    ('clientes', 'Clientes', 'icono-16-corazon'),
 ]
 HW, HH = 1080, 1920
 SC = 24  # 24 unidades -> 576 px (trazo visible ~384 px, dentro del 40 % central)
